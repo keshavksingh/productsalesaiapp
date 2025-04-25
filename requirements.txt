@@ -1,0 +1,10 @@
+azure-cosmos==4.9.0
+python-dotenv>=1.0.0
+faiss-cpu==1.10.0
+openai==1.76.0
+fastapi==0.115.12
+uvicorn==0.34.2
+python-dotenv>=1.0.0
+fastapi-mcp==0.3.3
+mcp-proxy==0.5.1
+semantic-kernel==1.28.1

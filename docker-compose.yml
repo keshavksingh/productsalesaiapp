@@ -1,0 +1,31 @@
+services:
+  mcpserver:
+    build:
+      context: .
+      dockerfile: mcpserver/Dockerfile
+    container_name: mcpserver
+    volumes:
+      - ./mcpserver:/mcpserver  
+    stdin_open: true
+    tty: true
+    networks:
+      - salesnet
+
+  salesapp:
+    build:
+      context: .
+      dockerfile: salesapp/Dockerfile
+    container_name: salesapp
+    depends_on:
+      - mcpserver
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./mcpserver:/mcp_server
+      - /var/run/docker.sock:/var/run/docker.sock      
+    networks:
+      - salesnet
+
+networks:
+  salesnet:
+    driver: bridge
