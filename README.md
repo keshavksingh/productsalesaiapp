@@ -7,3 +7,4 @@
 ![image](https://github.com/user-attachments/assets/81ed0603-ccae-4478-b9b1-3e4ce55cf7c9)
 
 Video Demonstration - https://youtu.be/urWO7pmwces
+Complete Article https://medium.com/@masterkeshav/building-a-product-sales-ai-assistant-with-rag-vector-search-faiss-openai-and-semantic-kernel-c8b58f882ca2
